@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trang đăng ký</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font&icon/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../font&icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../js/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="../js/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link src="../css/style.css"></link>
+
+<style>
+    .columns {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  display: block;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+</style>
+        
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+</head>
+<style>
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.img.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+  
+  .container{
+    width: 2000px;
+    padding-left: 0px;
+    background-color: ;
+  }
+  .container1 div {
+         background: rgb(174, 9, 35);
+         
+         }
+         .as {
+          color: rgb(255, 255, 255);
+          font-style: 20px Roboto,sans-serif;
+          font-size: 24px;;
+          text-decoration: none;
+         }
+h3{
+  text-decoration: none;
+}
+div.alert alert-info clearfix{
+    background-color:  rgb(174, 9, 35);
+}
+</style>
+<body>
+    <div class="page-wrapper">
+        <header>    
+            <div class="header-section">
+                <div class="header-banner container-fluid">
+                    <div class="row">
+                        <div class="banner col-md-12">
+                            <a href=""><img style="width: 100%;" src="../img/Header-discount.png" alt="" class="banner-discount"></a>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="header-content" style="background-color: firebrick;">
+                        <div class="row mx-5 my-1">
+                            <div class="logo col-3 my-3">
+                                <a class="align-middle" href="" title="Di Động Việt - Hệ thống bán lẻ Điện thoại, Macbook, Phụ kiện chính hãng">
+                                     <img src="../img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header-form col-5 my-3">
+                                <form action="" method="post" id="search-mini-form">
+                                    <input type="text" name="txtSearch" id="txtSearch" class="p-2" placeholder="Bạn muốn tìm gì" size="50px" role="combobox">
+                                    <button type="submmit" title="Tìm kiếm" class="ti-search p-2" aria-label="Search" style="border: white;" ></button>
+                                </form>
+                                
+                            </div>
+                            <div class="top-main-infor col-4 my-3 d-flex align-items-center">    
+                                <div class="main-info-item info-hotline d-flex align-items-center ">
+                                    <div class="phone-icon ">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="info ">
+                                        <a href="tel:18006108">
+                                            <p class="sub">Hotline hỗ trợ</p>
+                                            <strong class="title">1800 6108</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main-info-item info-customers d-flex align-items-center ">
+                                    <div class="user-icon ">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                        <ul class="header-links" style="display: block;">
+                                            <li class="authorization-links d-inline-block">
+                                                <a href="" class="customer-login-link">Đăng nhập</a>
+                                            </li>
+                                            /
+                                            <li class="authorization-links d-inline-block">
+                                                <a href="" class="customer-register-link">Đăng ký</a> 
+                                            </li>
+                                            <div class="memebers-section">
+                                                <p class="fs-20 bold ">
+                                                    <a href="" class="customer-list-link">Thành viên</a>  
+                                                </p>
+                                            </div>
+                                        </ul>
+                                    </div>        
+                                    <div class="shopify-icon">
+                                        <i class="fa-brands fa-shopify"></i>
+                                    </div>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+        </header>
+        <nav></nav>
+        <main>
+            <div class="content">
+                <!-- promotion: khuyến mãi, sự đề xuất, sự thăng cấp,thăng chứ -->
+                <div class="home-top-promotion">
+                    <aside class="trending"></aside>
+                    <section class="saleOff"></section>
+                    <aside class="Hot"></aside>
+                </div>
+            </div>
+        
+            <div class="columns"><div class="row"><div class="content-wrapper"><div class="column main"><input name="form_key" type="hidden" value="yWLnXbpmdtUf3fNj"><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+                <script>
+                    window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/didongviet.vn\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/didongviet.vn\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/didongviet.vn\/"};
+                </script>
+                <!-- ko template: getTemplate() -->
+            
+            
+            <!-- /ko -->
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="block block-customer-login">
+                <div class="block-content" aria-labelledby="block-customer-popup-login-heading">
+                    <form class="form-create-account" action="" method="post" id="customer-popup-form-register" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+                        <input name="form_key" type="hidden" value="yWLnXbpmdtUf3fNj">
+                        <input type="hidden" name="redirect_url" value="">
+                        <input type="hidden" name="firstname" value="Customer">
+                        <input type="hidden" name="lastname" value="New">
+                        <div class="messages"></div>
+                        <fieldset class="fieldset create account" data-hasrequired="* Required Fields">
+                            <strong>Đăng ký tài khoản</strong>
+                            <div class="field note font-caption mt-8">Tạo một tài khoản để nhận được những ưu đãi tốt nhất từ Di Động Việt</div>
+                            <div class="field required mt-16">
+                                <label for="popup-email_address" class="label"><span>Email</span></label>
+                                <div class="control">
+                                    <input type="email" name="email" autocomplete="email" id="popup-email_address" value="" title="Email" class="input-text" data-validate="{required:true, 'validate-email':true}" placeholder="Email" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="field password required mt-13">
+                                <label for="password" class="label"><span>Mật khẩu</span></label>
+                                <div class="control">
+                                    <input type="password" name="password" id="password" title="Mật khẩu" class="input-text" data-password-min-length="8" data-password-min-character-sets="3" data-validate="{required:true, 'validate-customer-password':true}" autocomplete="off" placeholder="Mật khẩu" aria-required="true">
+                                    <div id="password-strength-meter-container" data-role="password-strength-meter">
+                                        <div id="password-strength-meter" class="password-strength-meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field confirmation required mt-13">
+                                <label for="password-confirmation" class="label"><span>Xác nhận mật khẩu</span></label>
+                                <div class="control">
+                                    <input type="password" name="password_confirmation" title="Xác nhận mật khẩu" id="password-confirmation" class="input-text" data-validate="{required:true, equalTo:'#password'}" autocomplete="off" placeholder="Xác nhận mật khẩu" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="actions-toolbar mt-16">
+                                <div class="primary">
+                                    <button type="submit" class="action submit primary" title="Đăng ký"><span>Đăng ký</span></button>
+                                </div>
+                                <div class="secondary">
+                                    <p class="forgot-title font-caption">Bạn đã có tài khoản?</p>
+                                    <a class="action remind font-caption" href="#">
+                                        <p>Đăng nhập</p>
+                                    </a>
+                                </div>
+                            </div>
+                          
+                                <!-- <div class="social-icon facebook"></div> -->
+                                <div class="social-icon google"></div>
+                                <!-- <div class="social-icon apple"></div> -->
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <script>
+                require(["jquery"], function ($) {
+                    $(document).ready(function() {
+                        $("#customer-popup-sign-in").click(function() {
+                            $(".customer-login-link").trigger('click');
+                        });
+                        $(".block-customer-login .social-icon").click(function() {
+                            $(".customer-login-link").trigger('click');
+                        });
+                    });
+                });
+            </script>
+            
+            </div></div></div></div>
+
+            
+
+<!----------------------------footer---------------------------------->
+<div  class="footer content"  style="font-size: 14px;">
+    <div style="font-size: 14px;background-color: white;" class="top-footer mt-16 container"><div class="row"><div class="store-system col-md-6">
+  <div class="store-system-wrapper content-part">
+      <p class="title bold fs-20 lh-23">Hệ thống 28 cửa hàng Di Động Việt</p><hr>
+      <div class="content footer">
+          <div class="font-caption">Nơi có tất cả các sản phẩm Di Động Việt đang kinh doanh và là nơi Trade-in Thu cũ lên đời. Đặc biệt: Máy qua sử dụng giá rẻ, Trả góp linh hoạt với nhiều phương thức</div>
+          <div class="store-system-list">
+             <div class="showroom-info font-body-2">
+<div class="field address">
+<div class="showroom-info font-body-2">
+<div class="field address">
+<ul>
+<li>198A Tân Hương, Phường Tân Quý, Quận Tân Phú (Sắp mở bán)</li>
+<li>450 - 452 Nguyễn Oanh, Quận Gò Vấp (Sắp mở bán)</li>
+<li>324 Huỳnh Tấn Phát, Quận 7 (Sắp mở bán)</li>
+<li>3A Lê Thái Tổ, Quận Hoàn Kiếm, Hà Nội (Ngay ngã 4 Hàng Gai và Lê Thái Tổ)</li>
+<li>16 Nguyễn An Ninh, TP. Dĩ An, Bình Dương&nbsp;</li>
+<li>116 Thái Hà, P. Trung Liệt, Quận Đống Đa, Hà Nội&nbsp;</li>
+</ul>
+</div>
+</div>
+</div>
+</div> 
+           </div><hr>
+          <a href="">Xem tất cả 28 cửa hàng Di Động Việt &gt;</a>
+      </div>
+  </div>
+</div><div class="store-system col-md-6">
+  <div class="store-system-wrapper content-part">
+      <p class="title bold fs-20 lh-23"><h2>Hệ thống 09 cửa hàng SiS Mobifone - Di Động Việt</h2></p><hr>
+      <div class="content">
+          <div class="font-caption">Hệ thống liên kết theo mô hình Shop in Shop (SiS) giữa Mobifone và Di Động Việt. Nơi chỉ bán điện thoại Samsung, Oppo, Vsmart, Xiaomi với giá rẻ nhất thị trường.</div>
+          <div class="store-system-list">
+             <ul>
+<li>80 Nguyễn Du, P. Bến Nghé, Quận 1, TP.HCM</li>
+<li>291A Tô Hiến Thành, P. 13, Quận 10, TP.HCM</li>
+<li>122A Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, TP.HCM</li>
+<li>170C Quang Trung, P. 10, Quận Gò Vấp, TP.HCM</li>
+<li>254 Lê Văn Việt, P. Tăng Nhơn Phú A, Quận 9, TP.HCM</li>
+</ul> 
+           </div><hr>
+          <a href="">Xem tất cả 09 cửa hàng SiS Mobifone - Di Động Việt &gt;</a>
+      </div>
+  </div>
+</div></div>
+<div class="widget block block-static-block">
+<p class="ddv-apple-thongbao"><img src="../img/footer/ddv-apple-chinh-thuc.png" height="49px" width="175px" alt="">Là đại lý ủy quyền chính thức của Apple tại Việt Nam (Apple Authorized Reseller) từ tháng 11/2020, Di Động Việt đem đến cho quý khách hàng những trải nghiệm tuyệt vời khi mua sắm các sản phẩm, dịch vụ của Apple với chất lượng tốt nhất cùng thái độ phục vụ đúng chuẩn AAR</p></div>
+</div><div class="footer-middle" ><div class="bottom-footer mt-16 container" style="font-size: 23px;background-color: white;">
+<div class="row">
+<div class="footer-links col-md-8" style="font-size: 14px;">
+  <div class="footer-link-wrapper content-part">
+      <div class="footer-link footer-link-left">
+          <ul>
+<li><a href="">Mua hàng trả góp</a></li>
+<li><a href="">Chính sách bảo hành</a></li>
+<li><a href="">Chính sách đổi trả</a></li>
+<li><a href="">Chính sách bán hàng</a></li>
+<li><a href="">Chính sách bảo mật</a></li>
+<li><a href="">Chính sách sử dụng</a></li>
+<li><a href="">Hướng dẫn mua hàng từ xa</a></li>
+</ul>                </div>
+      <div class="footer-link footer-link-right">
+          <ul>
+<li><a href="">Khuyến mãi tháng 04</a></li>
+<li><a href="">Tin công nghệ 24h</a></li>
+<li><a href="">Trade-in thu cũ lên đời</a></li>
+<li><a href="">Tra cứu điểm thành viên</a></li>
+<li><a href="">Phụ kiện chính hãng</a></li>
+<li><a href="">Tuyển dụng mới nhất</a></li>
+<li><a href="">Trung tâm bảo hành Apple tại Việt Nam</a></li>
+</ul>                </div>
+  </div>
+</div>
+<div class="footer-support col-md-4">
+  <div class="footer-support-wrapper content-part">
+      <p class="title bold fs-20 lh-23">Hỗ trợ</p>
+      <div class="content" style="font-size: 14px;">
+          <div class="support-list">
+              <ul>
+                  <li>
+                      <div class="agency">
+                          <p>Gọi tư vấn máy - phụ kiện</p>
+                          <span>(08:00 – 21:30)</span>
+                      </div>
+                      <div class="phone"><strong class="bold fs-20 lh-23">1800.6018</strong></div>
+                  </li>
+                  <li>
+                      <div class="agency">
+                          <p>Khiếu nại - Góp ý</p>
+                          <span>(08:00 – 21:30)</span>
+                      </div>
+                      <div class="phone"><strong class="bold fs-20 lh-23">1800.6306</strong></div>
+                  </li>
+                  <li>
+                      <div class="agency">
+                          <p>Bảo hành - Hỗ trợ kỹ thuật</p>
+                          <span>(09:00 – 21:00)</span>
+                      </div>
+                      <div class="phone"><strong class="bold fs-20 lh-23">1800.6729</strong></div>
+                  </li>
+                  <li>
+                      <div class="agency">
+                          <p>Gọi mua hàng từ xa</p>
+                          <span>(08:00 – 21:30)</span>
+                      </div>
+                      <div class="phone"><strong class="bold fs-20 lh-23">1800.6018</strong></div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="footer-connect-info mt-16 container" style="font-size: 23px;background-color: white;">
+<div class="row">
+<div class="col-md-12">
+  <div class="connect-info-wrapper content-part" style="font-size: 14px;">
+          <div class="footer-connect-left">
+              <div class="connect-info social">
+                  <p class="title bold fs-20 lh-23">
+                      <i class="fa fa-swap"></i>Kết nối Di Động Việt
+                  </p>
+                  <div class="icon">
+                      <a rel="nofollow" target="_blank" href="">
+                          <i class="fa fa-facebook"></i>
+                      </a>
+                      <a rel="nofollow" target="_blank" href="">
+                          <i class="fa fa-instagram"></i>
+                      </a>
+                      <a rel="nofollow" target="_blank" href="">
+                          <i class="fa fa-youtube"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="connect-info pay-support">
+                  <p class="title bold fs-20 lh-23">
+                      <i class="fa fa-credit-card"></i>Hỗ trợ thanh toán                            </p>
+                  <div class="icon">
+                      <i class="fa fa-visa"></i>
+                      <i class="fa fa-mastercard"></i>
+                      <span class="more-payment"><img width="150" src=""></span>
+                  
+                  </div>
+                 
+              </div>
+</div>
+  </div>
+</div>
+</div>
+</div></div>
+<div class="col-12"><hr></div>
+<div class="info-content text-center font-body-2 col-12">
+  <p>Công Ty TNHH Công Nghệ và Truyền Thông VMG - 73 Trần Quang Khải, Phường Tân Định , quận 1, TPHCM.<br>Mã số doanh nghiệp: 0316105545, ngày cấp: 10/01/2020, nơi cấp: Sở kế hoạch và đầu tư thành phố Hồ Chí Minh <br>MST:0316105545. <br>Chủ sở hữu: Nguyễn Thị Kim Xuân - Điện thoại: 1800.6018 (miễn phí) - Email: lienhe@didongviet.vn - Bản quyền thuộc về Di Động Việt.</p>        </div>
+</div>
+</div></div></div>
+
+
+
+
+
+
+
+        </main>
+    </div>
+</body>
